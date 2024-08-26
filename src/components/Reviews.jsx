@@ -75,7 +75,9 @@ const Reviews = () => {
           <article key={resena.id} className={`${styles.container_review}`}>
             <div className={`${styles.content_review}`}>
               <Estrellas resena={resena} />
-              <p className={`${styles.comments}`}>{resena.comment}</p>
+              <p title={resena.comment} className={`${styles.comments}`}>
+                {resena.comment}
+              </p>
               <div className={`${styles.separator}`}></div>
               <div className={`${styles.content_footer}`}>
                 <img

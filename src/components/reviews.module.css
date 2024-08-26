@@ -24,7 +24,11 @@
 
 .comments {
   font-size: 0.85rem;
-  min-height: 123px;
+  min-height: 145px;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .separator {
@@ -53,24 +57,22 @@
   font-weight: 700;
   margin-left: 10px;
   color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MEDIA QUERIES */
 @media (min-width: 501px) {
-  .comments {
-    min-height: 225px;
-  }
-
   .name {
-    font-size: 0.95rem;
-    min-height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 0.75rem;
   }
 }
 
 @media (min-width: 576px) {
+  .name {
+    font-size: 0.85rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -80,20 +82,12 @@
 }
 
 @media (min-width: 992px) {
-  .comments {
-    min-height: 145px;
-  }
-
   .name {
     min-height: auto;
   }
 }
 
 @media (min-width: 1025px) {
-  .comments {
-    min-height: 225px;
-  }
-
   .name {
     min-height: 48px;
   }
@@ -103,24 +97,19 @@
   .comments {
     min-height: 185px;
   }
+
+  .name {
+    font-size: 0.95rem;
+  }
 }
 
 @media (min-width: 1300px) {
-  .comments {
-    min-height: 225px;
-  }
 }
 
 @media (min-width: 1400px) {
-  .comments {
-    min-height: 185px;
-  }
 }
 
 @media (min-width: 1500px) {
-  .comments {
-    min-height: 185px;
-  }
 }
 
 @media (min-width: 1600px) {

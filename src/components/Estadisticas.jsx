@@ -1,5 +1,5 @@
 import Titles from '@/components/Titles'
-import { Flat, Heat, Nested } from '@alptugidin/react-circular-progress-bar/'
+import { Flat } from '@alptugidin/react-circular-progress-bar/'
 
 import styles from './estadisticas.module.css'
 

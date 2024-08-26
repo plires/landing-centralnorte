@@ -1,0 +1,25 @@
+{
+  "kitsTwo": [
+    {
+      "id": 1,
+      "title": "KIT OFICINA",
+      "img_src": "kit-oficina.jpg",
+      "img_src_opt": "kit-oficina.webp",
+      "txt_btn": "QUIERO MÁS INFORMACIÓN"
+    },
+    {
+      "id": 2,
+      "title": "KIT DEPORTIVO",
+      "img_src": "kit-deportivo.jpg",
+      "img_src_opt": "kit-deportivo.webp",
+      "txt_btn": "QUIERO MÁS INFORMACIÓN"
+    },
+    {
+      "id": 3,
+      "title": "KIT EVENTOS",
+      "img_src": "kit-eventos.jpg",
+      "img_src_opt": "kit-eventos.webp",
+      "txt_btn": "QUIERO MÁS INFORMACIÓN"
+    }
+  ]
+}

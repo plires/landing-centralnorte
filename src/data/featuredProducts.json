@@ -1,0 +1,52 @@
+{
+  "featuredProducts": [
+    {
+      "id": 1,
+      "img_src": "featured-botella.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": "Botella 'ó 750'"
+    },
+    {
+      "id": 2,
+      "img_src": "featured-eco-bolsa.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": "Eco Bolsa Friselina"
+    },
+    {
+      "id": 3,
+      "img_src": "featured-gorro.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": "Gorro Santa Fe Mesh Combinado"
+    },
+    {
+      "id": 4,
+      "img_src": "featured-libreta.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": "Libreta White"
+    },
+    {
+      "id": 5,
+      "img_src": "featured-mochila.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": "Mochila ZOM"
+    },
+    {
+      "id": 6,
+      "img_src": "featured-taza.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": "Taza sublimada"
+    },
+    {
+      "id": 7,
+      "img_src": "featured-termo.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": "Termo Swiss Peak"
+    },
+    {
+      "id": 8,
+      "img_src": "featured-vaso.jpg",
+      "promo_img_src": "griferias-sale-carrusel.png",
+      "name": " Vaso Mugg Me"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slidesSecundarioSuperior": [
+    {
+      "id": 1,
+      "isActive": true,
+      "img_src": "slide-a2.jpg",
+      "img_alt": "slide a2 secundario"
+    },
+    {
+      "id": 2,
+      "isActive": false,
+      "img_src": "slide-b2.jpg",
+      "img_alt": "slide b2 secundario"
+    },
+    {
+      "id": 3,
+      "isActive": false,
+      "img_src": "slide-c2.jpg",
+      "img_alt": "slide c2 secundario"
+    }
+  ]
+}

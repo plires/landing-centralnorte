@@ -1,0 +1,94 @@
+.nuestros_servicios {
+  margin-bottom: 0;
+}
+
+.faja {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 10px;
+  top: -7px;
+  left: 10%;
+  background: var(--secondary-color);
+}
+
+.content_nuestros_servicios {
+  position: relative;
+  background: url('@/assets/img/fondo-muestras.jpg');
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+.content_row,
+.content {
+  min-height: 300px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .faja {
+    height: 15px;
+    top: -12px;
+  }
+
+  .content_nuestros_servicios {
+    min-height: 430px;
+  }
+
+  .content_row,
+  .content {
+    min-height: 430px;
+  }
+
+  .content {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .content_nuestros_servicios {
+    min-height: 515px;
+  }
+
+  .content_row,
+  .content {
+    min-height: 515px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content_nuestros_servicios {
+    min-height: 600px;
+  }
+
+  .content_row,
+  .content {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content_nuestros_servicios {
+    min-height: 660px;
+  }
+
+  .content_row,
+  .content {
+    min-height: 660px;
+  }
+}
+
+@media (min-width: 1600px) {
+}

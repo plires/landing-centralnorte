@@ -1,0 +1,162 @@
+.nuestros_servicios {
+  margin-bottom: 30px;
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.content_nuestros_servicios {
+  position: relative;
+}
+
+.faja {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: var(--primary-color);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faja_logos {
+  width: 100%;
+  height: 25px;
+  background: url('@/assets/img/logo-faja.svg');
+  background-repeat: repeat-x;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.carru {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nuestros_servicios h3 {
+  margin-bottom: 30px;
+}
+
+.content_data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.img_carru {
+  min-height: 300px;
+  object-fit: cover;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .content_nuestros_servicios {
+    text-align: left;
+  }
+
+  .content_data {
+    min-height: 430px;
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+
+  .img_carru {
+    min-height: 430px;
+  }
+
+  .faja {
+    height: 40px;
+  }
+
+  .faja_logos {
+    height: 30px;
+  }
+
+  .content {
+    padding-top: 40px;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .content_data {
+    min-height: 515px;
+    padding-left: 45px;
+  }
+
+  .img_carru {
+    min-height: 515px;
+  }
+
+  .faja {
+    height: 50px;
+  }
+
+  .faja_logos {
+    height: 35px;
+  }
+
+  .content {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content_data {
+    min-height: 600px;
+    padding-left: 85px;
+  }
+
+  .img_carru {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content_data {
+    min-height: 680px;
+    padding-left: 70px;
+  }
+
+  .img_carru {
+    min-height: 680px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content_data {
+    min-height: 750px;
+    padding-left: 140px;
+  }
+
+  .img_carru {
+    min-height: 750px;
+  }
+}

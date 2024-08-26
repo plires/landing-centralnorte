@@ -1,0 +1,25 @@
+{
+  "kitsOne": [
+    {
+      "id": 1,
+      "title": "KIT MATERO",
+      "img_src": "kit-matero.jpg",
+      "img_src_opt": "kit-matero.webp",
+      "txt_btn": "QUIERO MÁS INFORMACIÓN"
+    },
+    {
+      "id": 2,
+      "title": "KIT ECO",
+      "img_src": "kit-eco.jpg",
+      "img_src_opt": "kit-eco.webp",
+      "txt_btn": "QUIERO MÁS INFORMACIÓN"
+    },
+    {
+      "id": 3,
+      "title": "KIT ASADO",
+      "img_src": "kit-asado.jpg",
+      "img_src_opt": "kit-asado.webp",
+      "txt_btn": "QUIERO MÁS INFORMACIÓN"
+    }
+  ]
+}

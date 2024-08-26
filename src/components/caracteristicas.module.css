@@ -1,0 +1,30 @@
+.title {
+  margin-bottom: 30px;
+}
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .caracterisitcas {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .caracterisitcas {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

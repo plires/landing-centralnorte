@@ -1,0 +1,46 @@
+.content_stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.estrella {
+  width: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 501px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1200px) {
+  .estrella {
+    width: 40px;
+  }
+}
+
+@media (min-width: 1300px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1500px) {
+}
+
+@media (min-width: 1600px) {
+}

@@ -97,8 +97,8 @@ class App
         $objectPhpMailer->addAddress($destinationEmail); //Add a recipient
         $objectPhpMailer->addReplyTo($post['email']);
 
-        if ($_ENV['VITE_EMAIL_RECIPENT_CC'] != '') {
-          $objectPhpMailer->addAddress($_ENV['VITE_EMAIL_RECIPENT_CC'], $_ENV['VITE_NAME_APP']); //Agregar copia oculta
+        if ($_ENV['VITE_EMAIL_RECIPENT_BCC'] != '') {
+          $objectPhpMailer->addBCC($_ENV['VITE_EMAIL_RECIPENT_BCC'], $_ENV['VITE_NAME_APP']); //Agregar copia oculta
         }
 
         break;

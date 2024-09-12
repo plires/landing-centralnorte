@@ -98,7 +98,7 @@ class App
         $objectPhpMailer->addReplyTo($post['email']);
 
         if ($_ENV['VITE_EMAIL_RECIPENT_BCC'] != '') {
-          $objectPhpMailer->addBCC($_ENV['VITE_EMAIL_RECIPENT_BCC'], $_ENV['VITE_NAME_APP']); //Agregar copia oculta
+          $objectPhpMailer->addBCC($_ENV['VITE_EMAIL_RECIPENT_BCC']); //Agregar copia oculta;
         }
 
         break;

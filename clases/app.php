@@ -191,6 +191,7 @@ class App
     (isset($post['phone'])) ? $phone = $post['phone'] : $phone = null;
     (isset($post['comments'])) ? $comments = $post['comments'] : $comments = null;
     (isset($post['origin'])) ? $origin = $post['origin'] : $origin = null;
+    (isset($post['utm_source'])) ? $utm_source = $post['utm_source'] : $utm_source = 'no set';
 
     if (!defined('BASE')) {
       define('BASE', $_ENV['VITE_ROOT']);
@@ -204,6 +205,7 @@ class App
       '{email_user}',
       '{phone_user}',
       '{comments_user}',
+      '{utm_source}',
       '{origin}',
       '{date}',
       '{whatsapp}',
@@ -220,6 +222,7 @@ class App
       $email,
       $phone,
       $comments,
+      $utm_source,
       $origin,
       date('d-m-Y'),
       $_ENV['VITE_LINK_TO_WHATSAPP'],

@@ -297,10 +297,10 @@
     3. mso condicional: para Windows 10 Mail
 -->
 
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #c8c8c8;">
-  <center style="width: 100%; background-color: #c8c8c8;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #ffffff;">
+  <center style="width: 100%; background-color: #ffffff;">
     <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #c8c8c8;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff;">
     <tr>
     <td>
     <![endif]-->
@@ -319,7 +319,7 @@
     <!-- Vista previa Hack de espaciado de texto : END -->
 
     <!-- Cuerpo del Email : BEGIN -->
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto; background-color: #fefefe;" class="email-container">
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="1" width="600" style="margin: auto;border: solid 1px #c8c8c8; background-color: #fefefe;" class="email-container">
 
       <!-- Header-->
       <tr>
@@ -359,6 +359,10 @@
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
             <strong>Comentarios:</strong> {comments_user}
+          </p>
+
+          <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
+            <strong>Origen:</strong> {utm_source}
           </p>
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">

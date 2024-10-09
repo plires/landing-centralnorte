@@ -5,6 +5,14 @@ footer {
   color: white;
 }
 
+footer span {
+  cursor: pointer;
+}
+
+footer span:hover {
+  opacity: 0.6;
+}
+
 .logo {
   width: 50% !important;
   margin: auto;

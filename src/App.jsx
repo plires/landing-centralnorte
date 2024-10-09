@@ -25,7 +25,7 @@ function App() {
       <Formulario />
       <Kits
         data={kitsOne}
-        title='¿Te interesa alguno de nuestros Kits?'
+        title='¿Te interesa alguno de nuestros Kits personalizados?'
         description='Selecciona cual y te contamos como lo adaptamos'
       />
       <Caracteristicas />

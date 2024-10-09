@@ -19,7 +19,7 @@ const Muestras = () => {
         <div className={`row ${stylesMuestras.content_row}`}>
           <div className={`${stylesMuestras.content} col-md-10 offset-md-1`}>
             <ContentData
-              frase='Desde kits de productos creativos para celebraciones hasta ropa de trabajo funcional, ofrecemos una amplia gama de opciones que se adaptan a tus necesidades.'
+              frase='Desde kits personalizados de productos creativos para celebraciones hasta ropa de trabajo funcional, ofrecemos una amplia gama de opciones que se adaptan a tus necesidades.'
               message='Por favor, necesito ver muestras de productos...'
               textButton='NECESITO VER UNA MUESTRA DEL PRODUCTO'
             />

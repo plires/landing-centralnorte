@@ -7,7 +7,7 @@ const Caracteristicas = () => {
     <section className={`${styles.caracterisitcas} container`}>
       <div className='row'>
         <div className='col-md-12'>
-          <Titles title='Creamos tus productos <br />con los mejores materiales' />
+          <Titles title='Personalizamos tus productos <br />con los mejores materiales' />
         </div>
       </div>
       <div data-aos='fade-up' className='row'>

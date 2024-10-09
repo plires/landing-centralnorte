@@ -1,7 +1,13 @@
 import logo from '@/assets/img/logo-central-norte.svg'
+import { scrollToTop } from '@/utils/dataUtils.js'
+import { useContext } from 'react'
+import { StoreContext } from '../context/store'
+
 import styles from './footer.module.css'
 
 const Footer = () => {
+  const { setMessage, isPromo } = useContext(StoreContext)
+
   return (
     <footer className='container-fluid'>
       <div className='container'>
@@ -15,7 +21,19 @@ const Footer = () => {
             DIRECCIÓN: Carlos Villate 5698, B1605 Munro, Provincia de Buenos
             Aires. <br />
             TELÉFONO: 011 3 653 7605 <br />
-            EMAIL: info@centralnortesrl.com
+            <span
+              className='transition'
+              onClick={() =>
+                scrollToTop(
+                  null,
+                  setMessage,
+                  isPromo,
+                  'Necesito más información...',
+                )
+              }
+            >
+              EMAIL: info@centralnortesrl.com
+            </span>
           </div>
         </div>
         <div className='row'>

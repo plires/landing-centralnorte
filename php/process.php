@@ -47,9 +47,10 @@ try {
 
   // Enviamos los correos al usuario y al administrador del sitio
   $sendClient = $app->sendEmail('Cliente', 'Contacto Cliente', $require, $_ENV['VITE_EMAIL_RECIPENT']);
-  $sendUser = $app->sendEmail('Usuario', 'Contacto Usuario', $require, $_ENV['VITE_EMAIL_RECIPENT']);
+  // $sendUser = $app->sendEmail('Usuario', 'Contacto Usuario', $require, $_ENV['VITE_EMAIL_RECIPENT']);
 
-  if ($sendClient && $sendUser) {
+  // if ($sendClient && $sendUser) {
+  if ($sendClient) {
 
     $response_array = [
       'success' => true,

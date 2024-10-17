@@ -7,7 +7,7 @@ import { scrollToTop, getImageURL } from '@/utils/dataUtils.js'
 import styles from './kits.module.css'
 
 const Kits = ({ data, title, description = null }) => {
-  const { setMessage, isPromo } = useContext(StoreContext)
+  const { setMessage, isPromo, textAreaRef } = useContext(StoreContext)
 
   return (
     <section className={`${styles.kits} container-fluid`}>
@@ -47,7 +47,13 @@ const Kits = ({ data, title, description = null }) => {
                     <button
                       className={`${styles.button_kit} btn`}
                       onClick={() =>
-                        scrollToTop(item.title, setMessage, isPromo)
+                        scrollToTop(
+                          item.title,
+                          setMessage,
+                          isPromo,
+                          null,
+                          textAreaRef.current,
+                        )
                       }
                     >
                       {item.txt_btn}

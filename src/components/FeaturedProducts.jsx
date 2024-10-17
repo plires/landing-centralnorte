@@ -64,7 +64,7 @@ const settings = {
 }
 
 const FeaturedProducts = () => {
-  const { setMessage, isPromo } = useContext(StoreContext)
+  const { setMessage, isPromo, textAreaRef } = useContext(StoreContext)
   const featuredProducts = getFeaturedProducts('featuredProducts')
 
   return (
@@ -94,7 +94,15 @@ const FeaturedProducts = () => {
               <p>{product.name}</p>
               <button
                 className='btn'
-                onClick={() => scrollToTop(product.name, setMessage, isPromo)}
+                onClick={() =>
+                  scrollToTop(
+                    product.name,
+                    setMessage,
+                    isPromo,
+                    null,
+                    textAreaRef.current,
+                  )
+                }
               >
                 Consultar
               </button>

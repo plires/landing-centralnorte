@@ -6,7 +6,7 @@ import { StoreContext } from '../context/store'
 import styles from './footer.module.css'
 
 const Footer = () => {
-  const { setMessage, isPromo } = useContext(StoreContext)
+  const { setMessage, isPromo, textAreaRef } = useContext(StoreContext)
 
   return (
     <footer className='container-fluid'>
@@ -29,6 +29,7 @@ const Footer = () => {
                   setMessage,
                   isPromo,
                   'Necesito más información...',
+                  textAreaRef.current,
                 )
               }
             >

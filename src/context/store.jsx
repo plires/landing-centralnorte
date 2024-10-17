@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useState, useRef } from 'react'
 
 export const StoreContext = createContext()
 
@@ -7,6 +7,7 @@ const StoreProvider = ({ children }) => {
     import.meta.env.VITE_IS_PROMO === 'true',
   )
   const [message, setMessage] = useState('')
+  const textAreaRef = useRef(null)
   return (
     <StoreContext.Provider
       value={{
@@ -14,6 +15,7 @@ const StoreProvider = ({ children }) => {
         setIsPromo,
         message,
         setMessage,
+        textAreaRef,
       }}
     >
       {children}

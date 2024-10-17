@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import slidesPrincipal from './../data/slidePrincipal.json'
 import slidesSecundarioSuperior from './../data/slideSecundarioSuperior.json'
 import slidesSecundarioInferior from './../data/slideSecundarioInferior.json'
@@ -24,15 +25,16 @@ export const scrollToTop = (
   product = null,
   setMessage,
   isPromo,
-  message = null,
+  msg = null,
+  textAreaRef,
 ) => {
-  if (message) {
-    setMessage(message)
+  if (msg) {
+    setMessage(msg)
   } else {
-    const msg = isPromo
+    const msgPromo = isPromo
       ? `Quiero consultar por el producto ${product}, que se encuentra en promoción...`
       : `Necesito hacer una consulta por el producto ${product}`
-    setMessage(msg)
+    setMessage(msgPromo)
   }
 
   window.scroll({
@@ -40,6 +42,10 @@ export const scrollToTop = (
     left: 0,
     behavior: 'smooth',
   })
+
+  setTimeout(() => {
+    textAreaRef.focus()
+  }, 500)
 }
 
 export const validation = values => {

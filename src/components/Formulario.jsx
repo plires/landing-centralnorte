@@ -16,7 +16,7 @@ export default function Formulario() {
   const [wordBtn, setWordBtn] = useState('ENVIAR')
   const [isSubscribed, setIsSubscribed] = useState(true)
   const { executeRecaptcha } = useGoogleReCaptcha()
-  const { message, setMessage } = useContext(StoreContext)
+  const { message, setMessage, textAreaRef } = useContext(StoreContext)
 
   const ref = useRef()
 
@@ -175,6 +175,7 @@ export default function Formulario() {
 
                         <div className='form-group'>
                           <Field
+                            innerRef={textAreaRef}
                             className='form-control'
                             as='textarea'
                             name='comments'

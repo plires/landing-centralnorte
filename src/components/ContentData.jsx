@@ -7,7 +7,7 @@ import { scrollToTop } from './../utils/dataUtils'
 import styles from './content-data.module.css'
 
 const ContentData = ({ frase, message, textButton }) => {
-  const { setMessage, isPromo } = useContext(StoreContext)
+  const { setMessage, isPromo, textAreaRef } = useContext(StoreContext)
 
   return (
     <>
@@ -23,7 +23,9 @@ const ContentData = ({ frase, message, textButton }) => {
       <button
         data-aos='fade-up'
         className={`${styles.boton} btn`}
-        onClick={() => scrollToTop(null, setMessage, isPromo, message)}
+        onClick={() =>
+          scrollToTop(null, setMessage, isPromo, message, textAreaRef.current)
+        }
       >
         {textButton}
       </button>

@@ -6,6 +6,39 @@ use PHPMailer\PHPMailer\PHPMailer;
 class App
 {
 
+  public function subscribeUserInPerfit($post)
+  {
+
+    if (is_object($post)) {
+      $post = (array) $post;
+    }
+
+    if (isset($post['newsletter'])) {
+
+      $perfit = new PerfitSDK\Perfit(['apiKey' => $_ENV['VITE_PERFIT_API_KEY']]);
+      $listId = $_ENV['VITE_PERFIT_LIST'];
+
+      $response = $perfit->post(
+        '/lists/' . $listId . '/contacts',
+        [
+          'firstName' => $post['name'],
+          'email' => $post['email'],
+          'customFields' =>
+          [
+            [
+              'id' => 12,
+              'value' => $post['utm_source']
+            ]
+          ]
+        ]
+      );
+
+      return $response;
+    }
+
+    return false;
+  }
+
   public function validEmail($email)
   {
     $mail_valid = 0;

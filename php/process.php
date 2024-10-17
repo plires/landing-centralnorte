@@ -45,6 +45,9 @@ try {
   //grabamos en la base de datos y obtenemos el email destino de la consulta
   $db->getRepositorioContacts()->saveInBDD($require);
 
+  // damos de alta el ususario en Perfit
+  $app->subscribeUserInPerfit($require);
+
   // Enviamos los correos al usuario y al administrador del sitio
   $sendClient = $app->sendEmail('Cliente', 'Contacto Cliente', $require, $_ENV['VITE_EMAIL_RECIPENT']);
   // $sendUser = $app->sendEmail('Usuario', 'Contacto Usuario', $require, $_ENV['VITE_EMAIL_RECIPENT']);

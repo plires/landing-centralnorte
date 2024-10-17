@@ -32,7 +32,7 @@ const Footer = () => {
                 )
               }
             >
-              EMAIL: info@centralnortesrl.com
+              EMAIL: {import.meta.env.VITE_MAIL_CONTACTO}
             </span>
           </div>
         </div>

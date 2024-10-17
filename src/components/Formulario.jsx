@@ -139,7 +139,8 @@ export default function Formulario() {
                         <h2>COTIZACIÓN EXPRESS EN 24HS</h2>
                         <h5>
                           Nuestro equipo está listo para asesorarte en cada
-                          paso. Contanos qué estás buscando.
+                          paso. Contanos qué estás buscando. <br />
+                          Mínimo de compra 10 unidades
                         </h5>
 
                         <div className='form-group'>
@@ -178,7 +179,7 @@ export default function Formulario() {
                             as='textarea'
                             name='comments'
                             rows='4'
-                            placeholder='Que necesitás?'
+                            placeholder='Que necesitás? ¿Por qué cantidad?'
                             value={message}
                             onChange={event => setMessage(event.target.value)}
                           />

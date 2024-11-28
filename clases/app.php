@@ -130,9 +130,7 @@ class App
         $objectPhpMailer->addAddress($destinationEmail); //Add a recipient
         $objectPhpMailer->addReplyTo($post['email']);
 
-        if ($_ENV['VITE_EMAIL_RECIPENT_BCC'] != '') {
-          $objectPhpMailer->addBCC($_ENV['VITE_EMAIL_RECIPENT_BCC']); //Agregar copia oculta;
-        }
+        $objectPhpMailer->addAddress($_ENV['VITE_EMAIL_RECIPENT_BCC']); //Agregar copia 
 
         break;
 
@@ -265,30 +263,43 @@ class App
       BASE
     );
 
-    if ($_ENV['VITE_ENVIRONMENT'] === 'local') {
-      $arrContextOptions = array(
-        "ssl" => array(
-          "verify_peer" => false,
-          "verify_peer_name" => false,
-        ),
-      );
-    } else {
-      $arrContextOptions = array();
-    }
+    // Detecta si estás en local o producción
+    $isLocal = ($_ENV['VITE_ENVIRONMENT'] === 'local');
+
+    // Configura opciones de contexto según el entorno
+    $arrContextOptions = $isLocal ? array(
+      "ssl" => array(
+        "verify_peer" => false,
+        "verify_peer_name" => false,
+      ),
+    ) : array();
+
+    // Define la raíz dependiendo del entorno
+    $rootPath = $isLocal
+      ? $_ENV['VITE_ROOT'] // Local
+      : $_SERVER['DOCUMENT_ROOT'] . '/landing/'; // Producción 
 
     switch ($to) {
-
       case 'to_client':
-        $template = file_get_contents($_ENV['VITE_ROOT'] . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));
+        $filePath = $rootPath . 'includes/emails/contacts/contacts-to-client.php';
         break;
 
       case 'to_user':
-        $template = file_get_contents($_ENV['VITE_ROOT'] . 'includes/emails/contacts/contacts-to-user.php', false, stream_context_create($arrContextOptions));
+        $filePath = $rootPath . 'includes/emails/contacts/contacts-to-user.php';
         break;
 
       default:
-        $template = file_get_contents($_ENV['VITE_ROOT'] . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));
+        $filePath = $rootPath . 'includes/emails/contacts/contacts-to-client.php';
         break;
+    }
+
+    // Verifica si estás en local o producción para manejar el archivo correctamente
+    if ($isLocal) {
+      // Usa la ruta local directamente
+      $template = file_get_contents($filePath, false, stream_context_create($arrContextOptions));
+    } else {
+      // En producción, usa contexto de flujo
+      $template = file_get_contents($filePath);
     }
 
     //Remplazamos las variables por las marcas en los templates

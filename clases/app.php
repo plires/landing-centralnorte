@@ -130,7 +130,7 @@ class App
         $objectPhpMailer->addAddress($destinationEmail); //Add a recipient
         $objectPhpMailer->addReplyTo($post['email']);
 
-        $objectPhpMailer->addAddress($_ENV['VITE_EMAIL_RECIPENT_BCC']); //Agregar copia 
+        // $objectPhpMailer->addAddress($_ENV['VITE_EMAIL_RECIPENT_BCC']); //Agregar copia 
 
         break;
 

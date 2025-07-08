@@ -53,6 +53,7 @@
   background: var(--secondary-color) !important;
   width: 100%;
   text-transform: uppercase;
+  color: white !important;
 }
 
 .featured_products .content_product button:hover {

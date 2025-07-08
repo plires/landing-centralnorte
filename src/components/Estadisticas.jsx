@@ -17,13 +17,13 @@ const Estadisticas = () => {
                 <Flat
                   progress={85}
                   sx={{
-                    strokeColor: '#623cea',
+                    strokeColor: '#3d5398',
                     barWidth: 7,
                     valueSize: 26,
                     loadingTime: 1000,
                     valueWeight: 'bold',
-                    valueColor: '#5ce394',
-                    miniCircleColor: '#623cea',
+                    valueColor: '#19ac90',
+                    miniCircleColor: '#3d5398',
                     valueAnimation: true,
                     intersectionEnabled: true,
                   }}
@@ -42,13 +42,13 @@ const Estadisticas = () => {
                 <Flat
                   progress={75}
                   sx={{
-                    strokeColor: '#623cea',
+                    strokeColor: '#3d5398',
                     barWidth: 7,
                     valueSize: 26,
                     loadingTime: 1000,
                     valueWeight: 'bold',
-                    valueColor: '#5ce394',
-                    miniCircleColor: '#623cea',
+                    valueColor: '#19ac90',
+                    miniCircleColor: '#3d5398',
                     valueAnimation: true,
                     intersectionEnabled: true,
                   }}
@@ -67,13 +67,13 @@ const Estadisticas = () => {
                 <Flat
                   progress={50}
                   sx={{
-                    strokeColor: '#623cea',
+                    strokeColor: '#3d5398',
                     barWidth: 7,
                     valueSize: 26,
                     loadingTime: 1000,
                     valueWeight: 'bold',
-                    valueColor: '#5ce394',
-                    miniCircleColor: '#623cea',
+                    valueColor: '#19ac90',
+                    miniCircleColor: '#3d5398',
                     valueAnimation: true,
                     intersectionEnabled: true,
                   }}

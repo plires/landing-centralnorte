@@ -11,7 +11,7 @@
 .boton,
 .boton:not(.collapsed) {
   background-color: var(--secondary-color) !important;
-  color: black;
+  color: white;
 }
 
 .boton:hover,

@@ -53,6 +53,7 @@
 }
 
 .button_kit:not(.collapsed) {
+  color: white !important;
   margin-top: 15px;
   background: var(--secondary-color) !important;
 }

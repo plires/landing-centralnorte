@@ -172,7 +172,7 @@ class App
     $objectPhpMailer->SMTPAuth   = true;
     $objectPhpMailer->Username   = $_ENV['EMAIL_CLIENT'];
     $objectPhpMailer->Password   = $_ENV['PASSWORD'];
-    $objectPhpMailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $objectPhpMailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $objectPhpMailer->CharSet    = $_ENV['VITE_EMAIL_CHARSET'];
     $objectPhpMailer->Port       = $_ENV['EMAIL_PORT'];
 
